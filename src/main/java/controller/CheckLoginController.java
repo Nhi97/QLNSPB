@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+@WebServlet("/login")
 public class CheckLoginController extends HttpServlet {
     private UserDao userDao;
     public CheckLoginController(){

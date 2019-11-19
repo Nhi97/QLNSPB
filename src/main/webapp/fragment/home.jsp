@@ -17,8 +17,8 @@
 <div class="container">
     <div class="content">
         <h3>Thông tin chi tiết</h3>
-        <p>Họ và tên: Le Thi Quynh Nhi</p>
-        <p>Mã số sinh viên: 102160056</p>
+        <p>Họ và tên:Nhi dep gai</p>
+        <p>Mã số sinh viên: xxx</p>
         <p>Lớp 16T1</p>
     </div>
 </div>
