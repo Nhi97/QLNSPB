@@ -1,0 +1,37 @@
+body, html{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+
+}
+@font-face{
+	font-family: MyFont;
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+    font-weight: 100;
+}
+body{
+	font-family: MyFont;
+	width: 100%
+}
+.container {
+	background: url("../images/megaphone.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	position: relative;
+}
+.content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+h3{
+	text-transform: uppercase;
+	font-size: 30px;
+}
+p{
+	font-size: 20px
+}

@@ -1,0 +1,8 @@
+@font-face{
+	font-family: MyFont;
+    src: url(../font/Roboto/Roboto-Regular.tff);
+    font-weight: 100;
+}
+frame{
+	font-family: 'Roboto', sans-serif;
+}

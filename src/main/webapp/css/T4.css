@@ -1,0 +1,15 @@
+@font-face{
+	font-family: MyFont;
+    src: url(../font/Roboto/Black.ttf);
+    font-weight: 100;
+}
+body{
+	font-family: MyFont;
+	width: 100%
+}
+img{
+	margin-left: 10%;
+	margin-right:10%;
+	width: 80%;
+
+}
