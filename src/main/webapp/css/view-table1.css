@@ -1,0 +1,34 @@
+@font-face{
+  font-family: MyFont;
+    src: url(../font/Roboto/Roboto-Light.ttf);
+    font-weight: 300;
+}
+
+body{
+  font-family: MyFont;
+  width: 100%;
+  height:100%;
+}
+table.thongtin {
+  border-collapse: collapse;
+}
+table.thongtin, th.thongtin, td.thongtin {
+  color:#8a8888;
+    border: 1px solid #e89a97;
+    text-align: center;
+}
+caption.thongtin {
+    text-transform: uppercase;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 25px;
+    font-weight: 700;
+}
+th.thongtin, td.thongtin{
+   padding-top: 1%;
+    padding-bottom: 1%;
+}
+th.thongtin {
+    background-color: #f8a5a8;
+    color: #fff;
+}
