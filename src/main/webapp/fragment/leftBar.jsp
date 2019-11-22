@@ -18,7 +18,8 @@
 <body>
 <ul>
     <li class="btn"><a href="/fragment/home.jsp" target="home">Trang chủ</a></li>
-    <li  class="btn"><a href="${pageContext.request.contextPath}/showEmployees" target="home">Xem thông tin</a></li>
+    <li  class="btn"><a href="${pageContext.request.contextPath}/department" target="home">Xem thông tin phòng ban</a></li>
+    <li  class="btn"><a href="${pageContext.request.contextPath}/employee" target="home">Xem thông tin nhân viên</a></li>
     <li  class="btn"><a href="" target="home">Tìm kiếm</a></li>
 
 </ul>

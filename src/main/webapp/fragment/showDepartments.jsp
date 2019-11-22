@@ -1,10 +1,10 @@
-<%@ page import="model.bean.Employee" %>
 <%@ page import="java.util.List" %>
+<%@ page import="model.bean.Department" %>
 <%@ page import="java.util.ArrayList" %><%--
   Created by IntelliJ IDEA.
-  User: hoang
-  Date: 11/19/19
-  Time: 10:51 AM
+  User: nhile
+  Date: 21/11/2019
+  Time: 10:33
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Employee</title>
+    <title>Department</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -22,16 +22,16 @@
 <body>
 <p><%request.getAttribute("NOTIFICATION");%></p>
 <p>
-    <button class="btn btn-primary" onclick="window.location.href = 'fragment/employeeForm.jsp'">Add Employee</button>
+    <button class="btn btn-primary" onclick="window.location.href = 'fragment/departmentForm.jsp'">Add Department</button>
 </p>
 <table width=100% class="table table-striped table-bordered">
     <thead>
     <tr class="thead-dark">
         <th>STT</th>
-        <th>IDNV</th>
-        <th>FullName</th>
         <th>IDPB</th>
-        <th>Address</th>
+        <th>DepartmentName</th>
+        <th>Description</th>
+        <th>ListEmployees</th>
         <th>Edit</th>
         <th>Delete</th>
     </tr>
@@ -39,25 +39,26 @@
 
     <tbody>
     <%
-        List<Employee> employees = (ArrayList) request.getAttribute("employees");
+        List<Department> departments = (ArrayList) request.getAttribute("departments");
 
-        for (int i = 0; i < employees.size(); i++) {
-            Employee employee = employees.get(i);
+        for (int i = 0; i < departments.size(); i++) {
+            Department department = departments.get(i);
     %>
 
     <tr>
         <td><%= i + 1%></td>
-        <td><%=employee.getId()%></td>
-        <td><%=employee.getFullName()%></td>
-        <td><%=employee.getIdPb()%></td>
-        <td><%=employee.getAddress()%></td>
+        <td><%=department.getId()%></td>
+        <td><%=department.getDepartmentName()%></td>
+        <td><%=department.getDescription()%></td>
+
+        <td><a class="btn btn-primary" href="${pageContext.request.contextPath}/department?action=LIST&idpb=<%=department.getId()%>">Show</a></td>
 
         <td><a class="btn btn-primary"
-               href="${pageContext.request.contextPath}/employee?action=EDIT&idnv=<%=employee.getId()%>">Edit</a>
+               href="${pageContext.request.contextPath}/department?action=EDIT&idpb=<%=department.getId()%>">Edit</a>
         </td>
 
         <td><a class="btn btn-primary"
-               href="${pageContext.request.contextPath}/employee?action=DELETE&idnv=<%=employee.getId()%>">Delete</a>
+               href="${pageContext.request.contextPath}/department?action=DELETE&idpb=<%=department.getId()%>">Delete</a>
         </td>
 
     </tr>
